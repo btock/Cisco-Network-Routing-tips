@@ -13,23 +13,11 @@ Router>ena
 Router#config t
 Enter configuration commands, one per line.  End with CNTL/Z.
 Router(config)#interface fa0/0
-Router(config-if)#!
-Router(config-if)#!
-Router(config-if)#!
 Router(config-if)#ip address 10.0.0.1 255.0.0.0
-Router(config-if)#!
 Router(config-if)#no shutdown
-
-Router(config-if)#!
-Router(config-if)#!
-Router(config-if)#!
 Router(config-if)#interface fa0/1
-Router(config-if)#!
 Router(config-if)#ip address 19.1.1.2 255.255.255.252
-Router(config-if)#!
-Router(config-if)#!
 Router(config-if)#no shutdown
-
 Router(config-if)#
 %LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
 
@@ -38,6 +26,7 @@ Router(config-if)#
 Router(config-if)#
 ```
 ### Router 1 IP route Configuration
+comand: Router(config)# ip route "destination_network" "subnet_mask" "ip_address_of_next_hop_neighbot"
 ```
 Router(config)#ip route 192.168.1.0 255.255.255.0 19.1.1.1
 Router(config)#ip route 172.16.0.0 255.255.0.0 19.1.1.1
@@ -48,28 +37,13 @@ Router(config)#
 ```
 Router#config t
 Enter configuration commands, one per line.  End with CNTL/Z.
-Router(config)#
-Router(config)#
-Router(config)#
 Router(config)#interface fa0/0
-Router(config-if)#!
-Router(config-if)#!
-Router(config-if)#!
 Router(config-if)#ip address 192.168.1.1 255.255.255.0
-Router(config-if)#!
 Router(config-if)#no shutdown
-
-Router(config-if)#!
-Router(config-if)#!
-Router(config-if)#!
 Router(config-if)#interface fa0/1
-Router(config-if)#!
 Router(config-if)#ip address 172.16.0.1 255.255.0.0
-Router(config-if)#!
-Router(config-if)#!
 Router(config-if)#no shutdown
 %LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
-
 
 Router(config-if)#
 %LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
