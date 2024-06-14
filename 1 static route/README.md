@@ -51,7 +51,7 @@ Router(config-if)#
 Router(config-if)#exit
 Router(config)#
 ```
-### Router 1 IP route Configuration
+### Router 0 IP route Configuration
 ```
 Router(config)#ip route 10.0.0.0 255.0.0.0 19.1.1.2
 Router(config)#
