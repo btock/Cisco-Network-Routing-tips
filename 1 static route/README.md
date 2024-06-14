@@ -1,6 +1,9 @@
 # Static Routing
 
 Estas definen una ruta explícita entre dos dispositivos de red. A diferencia de los protocolos de routing dinámico, las rutas estáticas no se actualizan automáticamente y se deben reconfigurar de forma manual si se modifica la topología de la red
+
+![static routing](https://github.com/btock/Cisco-Network-Routing-tips/assets/14008255/74c6c149-db63-44d5-b71e-663f03698669)
+
 ***
 ## Router 1 Configuration
 ***
